@@ -1,0 +1,402 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    /* Jika ingin menggunakan logo gambar, ganti teks h1 dengan <img> */
+}
+  
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #ccc;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.quiz-card {
+    background: white;
+    border: 2px solid #000;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 0px #000; /* Efek shadow tegas khas desain retro */
+}
+
+#question-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.btn-quiz {
+    color: #000000 !important; /* Warna hitam pekat */
+    font-weight: 600; /* Membuat teks sedikit lebih tebal agar mudah dibaca */
+    font-family: sans-serif; /* Pastikan fontnya bersih */
+    border: 2px solid #000; /* Memberi garis pinggir hitam agar senada dengan desainmu */
+    background-color: #ffffff; /* Latar belakang putih */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-quiz:hover {
+    background: #f0f0f0;
+}
+
+.correct {
+    background-color: #d4edda !important;
+    border-color: #28a745 !important;
+}
+
+.wrong {
+    background-color: #f8d7da !important;
+    border-color: #dc3545 !important;
+}
+
+.hide { display: none; }
+
+/* Section Logic */
+.section {
+    display: none;
+    padding: 40px 10%;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#result-container button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%; /* Agar memenuhi lebar kotak hitam seperti di gambar */
+    transition: 0.3s;
+}
+
+#result-container button:hover {
+    background-color: #333;
+}
+
+/* Hero Section (Home) */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Menggunakan gambar tentara sebagai background hero */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(70%);
+}
+
+.hero h2, .hero p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.hero h2 {
+    top: 40%;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+    padding: 10px;
+    display: inline-block;
+}
+
+.hero p {
+    top: 60%;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+/* Tampilan Bio (Beranda) */
+.bio {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bio h3 {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Galeri Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Form Kontak */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Footer (Sesuai screenshot Anda) */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+        .section {
+            display: none; /* Sembunyikan semua section secara default */
+        }
+        .section.active {
+            display: block; /* Tampilkan section aktif */
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .bio {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .timeline-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .timeline {
+            display: inline-flex;
+            gap: 20px;
+        }
+        .event {
+            min-width: 300px;
+            background-color: #fff;
+            border: 2px solid #000000;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .book-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #000000;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+        footer {
+            background-color: #000; /* Hitam */
+            color: white;
+            text-align: center;
+            padding: 4px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        main {
+    padding-bottom: 150px; /* Memberi ruang agar teks terakhir tidak tertutup footer hitam */
+        }
+        .section {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: none; /* Sembunyikan secara default */
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+   /* Styling Ikon Sosial */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white; /* Warna putih agar kontras dengan header hitam */
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ccc; /* Berubah menjadi abu-abu saat di-hover */
+    transform: translateY(-3px);
+}
+
+/* Jika ikon diletakkan di bagian Kontak yang berlatar putih */
+#kontak .social-icons a {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

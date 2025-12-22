@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenaRevolusi.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://pbs.twimg.com/media/G8hUr8tbQAEaqUX?format=png&name=medium" alt="Logo" style="height: 78px;">
+      
+        <nav>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('beranda')">Beranda</a>
+            <a onclick="showSection('sejarah')">Sejarah</a>
+            <a onclick="showSection('perpustakaan')">Perpustakaan</a>
+            <a onclick="showSection('galeri')">Galeri</a>
+            <a onclick="showSection('kontak')">Kontak</a>
+        </nav>
+        <div class="social-icons">
+    <a href="https://www.instagram.com/penarevolusi_?igsh=YWs1b2F4djNldHZp" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="penarevolusi06@gmail.com" title="Gmail">
+        <i class="fas fa-envelope"></i>
+    </a>
+    </header>
+    <main>
+
+        <div id="home" class="section active">
+    <h1>SELAMAT DATANG DI PENA REVOLUSI</h1>
+    <p>Website ini menyajikan informasi tentang tokoh-tokoh penting dalam sejarah Revolusioner Indonesia.</p>
+    
+    <section class="hero">
+        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2021/11/08/1362916273.jpg" alt="Pahlawan Indonesia">
+    </section>
+
+    <section id="quiz-section" style="margin-top: 40px;">
+        <div class="container">
+            <h2 style="text-align: left;">Uji Pengetahuan: Tokoh Revolusioner</h2>
+            
+            <div id="quiz-container" class="quiz-card">
+                <div id="question-text" style="font-size: 1.2rem; margin-bottom: 20px; font-weight: bold;">
+                    Memuat pertanyaan...
+                </div>
+                
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+
+                <div id="quiz-footer" style="margin-top: 20px; border-top: 1px solid #eee; pt: 15px;">
+                    <button id="next-btn" class="hide" style="background: #000; color: #fff; padding: 10px 20px; cursor: pointer;">
+                        Pertanyaan Selanjutnya
+                    </button>
+                </div>
+            </div>
+
+            <div id="result-container" class="hide quiz-card" style="text-align: center;">
+                <h3>Kuis Selesai!</h3>
+                <p id="score-text" style="font-size: 1.5rem; font-weight: bold;"></p>
+                <button onclick="restartQuiz()" style="padding: 10px 20px; background: #000; color: #fff; cursor: pointer;">
+                    Ulangi Kuis
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+       <!-- beranda -->
+        <div id="beranda" class="section">
+            <section class="bio">
+                <h3>Bio Singkat Tan Malaka</h3>
+                <p>Tan Malaka (1897-1949) adalah pemikir dan pejuang revolusioner Indonesia. 
+                    Ia lahir sebagai Sutan Ibrahim di Suliki, Sumatera Barat, dan dikenal sebagai tokoh kiri yang gigih melawan kolonialisme.
+                     Perjalanannya penuh pengembaraan, dari Belanda hingga Asia, hingga akhirnya gugur di Kediri karena perbedaan politik.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Sukarno</h3>
+                <p>Sukarno (1901-1970) adalah proklamator kemerdekaan Indonesia dan presiden pertama.
+                     Ia dikenal sebagai tokoh nasionalis yang memimpin perjuangan melawan kolonialisme Belanda dan Jepang, 
+                     serta mendirikan Pancasila sebagai dasar negara.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Mohammad Hatta</h3>
+                <p>Mohammad Hatta (1902-1980) adalah wakil presiden pertama Indonesia dan tokoh ekonomi.
+                     Ia berjuang untuk kemerdekaan melalui diplomasi dan pendidikan, serta dikenal sebagai "Bapak Koperasi" Indonesia.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat D.N. Aidit</h3>
+                <p>D.N. Aidit (1912-1948) adalah tokoh Partai Komunis Indonesia dan pemimpin revolusi sosialis.
+                     Ia aktif dalam perjuangan anti-kolonial dan memainkan peran penting dalam gerakan komunis di Indonesia.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Amir Sjarifuddin</h3>
+                <p>Amir Sjarifuddin (1907-1948) adalah pemimpin Partai Sosialis Indonesia dan perdana menteri pertama.
+                     Ia aktif dalam perjuangan anti-kolonial dan revolusi sosial, namun gugur dalam peristiwa Madiun karena perbedaan ideologi.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Jenderal Soedirman</h3>
+                <p>Jenderal Soedirman (1916-1950) adalah Panglima Besar TNI pertama. Beliau dikenal karena memimpin perang gerilya yang legendaris melawan Belanda meski dalam kondisi sakit paru-paru parah.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Bung Tomo (Sutomo)</h3>
+                <p>Sutomo (1920-1981) atau Bung Tomo adalah tokoh orator yang membakar semangat rakyat dalam Pertempuran 10 November 1945 di Surabaya melalui siaran radio.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Sutan Sjahrir</h3>
+                <p>Sutan Sjahrir (1909-1966) adalah intelektual dan perdana menteri pertama Indonesia. Beliau memperjuangkan kemerdekaan melalui jalur diplomasi internasional.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Jenderal Ahmad Yani</h3>
+                <p>Jenderal Ahmad Yani (1922-1965) adalah Menteri/Panglima Angkatan Darat yang gugur sebagai pahlawan revolusi dalam menjaga kedaulatan negara.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Letjen Suprapto</h3>
+                <p>Letjen Suprapto (1920-1965) Beliau adalah perwira yang sangat berpengalaman sejak masa perjuangan kemerdekaan. Di markas besar AD, ia dikenal sebagai sosok yang sangat menentang rencana PKI untuk mempersenjatai buruh dan tani (Angkatan Kelima). </p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Letjen S. Parman</h3>
+                <p>Letjen S. Parman (1918-1965) Merupakan ahli intelijen yang sangat menonjol. Meskipun kakak kandungnya (Sakirman) adalah petinggi PKI, S. Parman tetap setia pada militer dan menjadi orang yang paling tahu tentang gerakan rahasia PKI, sehingga ia menjadi target utama untuk disingkirkan. </p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Letjen M.T Haryo</h3>
+                <p>Letjen M.T Haryo (1924-1965) Perwira yang sangat cerdas dan menguasai tiga bahasa asing (Inggris, Belanda, Jerman). Ia sering menjadi perwakilan dalam perundingan internasional. Ia gugur di rumahnya saat mencoba melawan pasukan penculik yang masuk ke kamar tidurnya. </p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Mayjen D.I. Pandjaitan</h3>
+                <p>Mayjen D.I. Pandjaitan (1925-1965) Ia dikenal sebagai perwira yang religius dan disiplin tinggi. D.I. Pandjaitan pernah menjabat sebagai Atase Militer di Jerman Barat. Ia gugur di halaman rumahnya setelah sempat melakukan doa terakhir sebelum ditembak.</p>
+            </section>
+            <section class="bio">
+                <h3>Bio Singkat Mayjen Sutoyo Siswomiharjo</h3>
+                <p>Mayjen Sutoyo Siswomiharjo (1922-1965) Beliau adalah pakar hukum di militer. Tugas utamanya adalah memastikan penegakan hukum di lingkungan TNI AD. PKI memusuhinya karena ia konsisten menolak ideologi komunis masuk ke dalam sistem hukum militer. </p>
+            </section>
+             <section class="bio">
+                <h3>Bio Singkat Kapten Pierre Tendean</h3>
+                <p>Kapten Pierre Tendean (1939-1965) Merupakan perwira muda lulusan ATEKAD (Akademi Teknik Angkatan Darat). Ia sebenarnya adalah korban salah sasaran; ia mengaku sebagai Jenderal Nasution saat rumah mereka diserbu untuk melindungi sang Jenderal yang berhasil melarikan diri.</p>
+            </section>
+        </div>
+
+        <!--Sejarah-->
+        <div id="sejarah" class="section">
+            <h2>Timeline Perjalanan Hidup Tan Malaka</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1897-1913: Masa Muda</h3>
+                        <p>Lahir di Suliki, Sumatera Barat sebagai Sutan Ibrahim. Anak cerdas yang mendapat gelar datuk muda sebelum berangkat ke Belanda.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1913-1919: Pengembaraan Intelektual</h3>
+                        <p>Di Belanda, mengenal pemikiran kiri dan merasa asing dengan kolonialisme yang menindas bangsanya.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1922-1942: Pelarian Global</h3>
+                        <p>Diusir dari Hindia Belanda, berkeliling dunia (Moskow, Manila, Shanghai, Singapura) dengan nama samaran untuk hindari intelijen internasional.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1945-1949: Akhir Perjuangan</h3>
+                        <p>Kembali ke Indonesia saat proklamasi, tapi berakhir tragis di Kediri oleh tentara republik karena perbedaan prinsip politik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Timeline Perjalanan Hidup Sukarno</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1901-1920: Masa Muda</h3>
+                        <p>Lahir di Surabaya sebagai Kusno Sosrodihardjo. Belajar di sekolah Belanda dan mulai terlibat dalam gerakan nasionalis.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1920-1942: Perjuang Nasionalis</h3>
+                        <p>Mendirikan PNI dan dipenjara oleh Belanda. Berkembang menjadi pemimpin utama pergerakan kemerdekaan.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1942-1945: Pendudukan Jepang</h3>
+                        <p>Bekerja sama dengan Jepang untuk kemerdekaan, namun tetap mempersiapkan proklamasi.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1945-1970: Era Kemerdekaan</h3>
+                        <p>Memproklamasikan kemerdekaan, menjadi presiden, dan memimpin negara hingga akhir hayatnya.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Timeline Perjalanan Hidup Mohammad Hatta</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1902-1921: Pendidikan</h3>
+                        <p>Lahir di Bukittinggi. Belajar di Belanda dan bergabung dengan Perhimpunan Indonesia.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1921-1942: Aktivisme</h3>
+                        <p>Terlibat dalam gerakan mahasiswa dan ekonomi, dipenjara oleh Belanda.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1942-1945: Pendudukan Jepang</h3>
+                        <p>Bekerja di bidang ekonomi dan mempersiapkan kemerdekaan.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1945-1956: Kepemimpinan</h3>
+                        <p>Menjadi wakil presiden, lalu mundur dan fokus pada oposisi.</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Timeline Perjalanan Hidup D.N. Aidit</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1923: Kelahiran</h3>
+                        <p>Lahir dengan nama Achmad Aidit di Pulau Belitung. Ia kemudian pindah ke Jakarta untuk melanjutkan sekolah.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1943: Bergabung dengan PKI</h3>
+                        <p>Mulai aktif dalam gerakan pemuda dan bergabung dengan Partai Komunis Indonesia (PKI) di masa pendudukan Jepang.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1951: Membangun Kembali PKI</h3>
+                        <p>Mengambil alih kepemimpinan PKI bersama Lukman dan Njoto, mengubah strategi partai menjadi lebih nasionalis.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1955: Kesuksesan Pemilu</h3>
+                        <p>Membawa PKI menjadi salah satu dari empat partai besar di Indonesia dalam Pemilu pertama.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1965: Peristiwa G30S & Akhir Hayat</h3>
+                        <p>Terlibat dalam gejolak politik G30S, melarikan diri ke Jawa Tengah, dan dieksekusi di Boyolali Tanpa di adili.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Timeline Perjalanan Hidup Jenderal Soedirman</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>Masa Kecil dan Karier Pendidik (1916-1942)</h3>
+                        <p>24 Januari 1916 Lahir di Bodas Karangjati, Menempuh pendidikan di HIS (Sekolah Dasar) dan MULO (Sekolah Menengah) di Cilacap. Ia dikenal sangat religius dan aktif di organisasi kepanduan Hizbul Wathan (milik Muhammadiyah).</p>
+                    </div>
+                    <div class="event">
+                        <h3>Awal Karier Militer (1943-1945)</h3>
+                        <p>Bergabung dengan tentara PETA (Pembela Tanah Air) bentukan Jepang. Ia mengikuti pelatihan di Bogor dan diangkat menjadi Daidanco (Komandan Batalyon) di Kroya.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Epos Perjuangan Kemerdekaan (1945-1949)</h3>
+                        <p>Memimpin pertempuran besar di Ambarawa melawan tentara Sekutu dan Belanda. Kemenangan ini mengukuhkan posisinya sebagai pemimpin militer yang disegani.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Akhir Hayat dan Warisan (1950)</h3>
+                        <p>29 Januari 1950: Jenderal Soedirman wafat di Magelang pada usia 34 tahun. Jenazahnya dimakamkan di Taman Makam Pahlawan Kusumanegara, Yogyakarta.</p>
+                    </div>
+                </div>
+            </div>
+             
+            <h2>Timeline Perjalanan Hidup Amir Sjarifuddin</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1907-1927: Masa Muda</h3>
+                        <p>Lahir di Medan. Belajar di Belanda dan terpengaruh sosialisme.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1927-1942: Aktivisme Politik</h3>
+                        <p>Mendirikan Partai Rakjat Indonesia dan terlibat dalam gerakan kiri.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1942-1945: Pendudukan Jepang</h3>
+                        <p>Bergabung dengan pemerintah boneka Jepang untuk mempersiapkan revolusi.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1945-1948: Era Kemerdekaan</h3>
+                        <p>Menjadi perdana menteri, namun gugur dalam peristiwa Madiun.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Timeline Perjalanan Hidup Sutan Sjahrir</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>Masa Muda dan Pendidikan (1909-1929)</h3>
+                        <p>Lahir di Padang Panjang, Sumatera Barat, Menempuh pendidikan dasar di Europeesche Lagere School (ELS), Medan.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Perjuangan Melawan Penjajah (1931-1945)</h3>
+                        <p>Menjadi Ketua PNI Baru (Pendidikan Nasional Indonesia) menggantikan Mohammad Hatta yang saat itu masih di Belanda.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Awal Kemerdekaan dan Diplomasi (1945-1950)</h3>
+                        <p>14 November 1945 Diangkat menjadi Perdana Menteri pertama Republik Indonesia pada usia 36 tahun.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Masa Orde Lama dan Akhir Hayat (1950-1966)</h3>
+                        <p>PSI ikut serta dalam Pemilu pertama, namun tidak mendapatkan suara yang signifikan.</p>
+                    </div>
+                </div>
+            </div>
+
+           <h2>Timeline Perjalanan Hidup Bung Tomo (Sutomo)</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>Masa Muda dan Jurnalisme (1920-1944)</h3>
+                        <p>Lahir di Blauran, Surabaya, Menjadi jurnalis lepas untuk harian Soerabaia Post dan majalah Pembela Rakyat.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Pertempuran Surabaya (1945)</h3>
+                        <p>12 Oktober 1945 Mendirikan Barisan Pemberontakan Rakyat Indonesia (BPRI) untuk menyatukan kekuatan rakyat melawan kembalinya penjajah.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Karier Politik (1950-1970)</h3>
+                        <p>Menjabat sebagai Menteri Negara Urusan Bekas Pejuang dalam Kabinet Burhanuddin Harahap, Terpilih sebagai anggota DPR melalui Partai Buruh.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Akhir Hayat dan Penghormatan (1981-2008)</h3>
+                        <p>7 Oktober 1981 Wafat saat sedang menunaikan ibadah haji di Padang Arafah, Arab Saudi. Sesuai wasiatnya, jenazahnya dibawa pulang dan dimakamkan di TPU Ngagel, Surabaya (bukan di Taman Makam Pahlawan), agar tetap dekat dengan rakyat</p>
+                    </div>
+                </div>
+            </div>
+             
+            <h2>Timeline Perjalanan Hidup Jenderal Soedirman</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="event">
+                        <h3>1916 1942: Masa Muda dan Pendidikan</h3>
+                        <p>1934: Aktif dalam organisasi kepanduan Hizbul Wathan (Muhammadiyah). 
+                            Ia menunjukkan bakat kepemimpinan yang luar biasa sejak usia muda.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1943 1945: Awal Karier Militer</h3>
+                        <p>1943: Bergabung dengan PETA (Pembela Tanah Air) bentukan Jepang. Ia dilatih di Bogor dan diangkat menjadi Komandan Batalyon (Daidancho) di Kroya, Jawa Tengah.</p>
+                    </div>
+                    <div class="event">
+                        <h3>1945: Menjadi Panglima Besar</h3>
+                        <p>12 November 1945: Dalam pertemuan TKR (Tentara Keamanan Rakyat), Soedirman yang saat itu baru berusia 29 tahun terpilih menjadi Panglima Besar pertama, mengalahkan Oerip Soemohardjo melalui pemungutan suara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--katalog buku-->
+        <div id="perpustakaan" class="section">
+            <h2>Katalog Buku Tan Malaka</h2>
+            <ul class="book-list">
+                <li><strong>Naar De Republiek indonesia (1925)</strong> - Analisis tentang Merumuskan konsep negara republik indonesia jauh sebelum proklamasi kemerdekaan.</li>
+                <li><strong>Massa Actie (1926)</strong> - Analisis tentang aksi massa.</li>
+                <li><strong>Madilog (1943)</strong> - Karya utama tentang materialisme dialektis.</li>
+                <li><strong>Gerpolek (1948)</strong> - Buku tentang gerakan politik.</li>
+                <li><strong>Dari Penjara ke Penjara (1948)</strong> - Memoir dari pengalaman penjara.</li>
+            </ul>
+            <h2>Katalog Buku Sukarno</h2>
+            <ul class="book-list">
+                <li><strong>Sarikat Islam (1923)</strong> - Buku tentang gerakan Sarekat Islam.</li>
+                <li><strong>Mentjapai Indonesia Merdeka (1933)</strong> - Pidato dan tulisan tentang kemerdekaan.</li>
+                <li><strong>Indonesia Menggugat (1930)</strong> - Pembelaan di pengadilan kolonial.</li>
+            </ul>
+            <h2>Katalog Buku Mohammad Hatta</h2>
+            <ul class="book-list">
+                <li><strong>Ekonomi Kita (1947)</strong> - Buku tentang ekonomi nasional.</li>
+                <li><strong>Demokrasi Kita (1951)</strong> - Analisis tentang demokrasi Indonesia.</li>
+                <li><strong>Memoir (1979)</strong> - Otobiografi tentang perjuangannya.</li>
+            </ul>
+            <h2>Katalog Buku D.N. Aidit</h2>
+            <ul class="book-list">
+                <li><strong>Kaum Tani Mengganyang Setan-Setan Desa (1950)</strong> - Buku tentang gerakan petani.</li>
+                <li><strong>PKI dan Revolusi (1958)</strong> - Analisis tentang peran PKI dalam revolusi.</li>
+                <li><strong>Politik dan Revolusi (1960)</strong> - Tulisan tentang strategi politik komunis.</li>
+            </ul>
+            <h2>Katalog Buku Amir Sjarifuddin</h2>
+            <ul class="book-list">
+                <li><strong>Islam dan Sosialisme (1946)</strong> - Buku tentang ideologi sosialisme Islam.</li>
+                <li><strong>Perjuangan Kita (1947)</strong> - Tulisan tentang revolusi sosial.</li>
+            </ul>
+            <h2>Katalog Sutan Sjahrir</h2>
+            <ul class="book-list">
+                <li><strong>Perjuangan Kita (1945)</strong> - Pamflet politik tentang arah revolusi Indonesia.</li>
+                <li><strong>Renungan Indonesia (1947)</strong> - Catatan pemikiran selama masa pembuangan.</li>
+            </ul>
+            <h2>Katalog Bung Tomo (Sutomo)</h2>
+            <ul class="book-list">
+                <li><strong>10 Nopember (1951)</strong> - buku pertama yang ia tulis mengenai peristiwa Surabaya.</li>
+                <li><strong>Menembus Kabut: Autobiografi Bung Tomo (1955)</strong> - Buku ini berisi kisah hidupnya, pandangannya terhadap perjuangan kemerdekaan Indonesia.</li>
+            </ul>
+        </div>
+        </div>
+        
+        <!-- gallery -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+        <div id="galeri" class="section">
+            <h2>Galeri Arsip Tan Malaka</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/TanMalaka_DariPendjara_ed3.jpg" alt="Foto Tan Malaka 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://static.republika.co.id/uploads/images/inline/181119104331-249.jpg" alt="Dokumen 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-Lfa9S580IhEoEenv9qpaC5hZKEKex4OIg&s" alt="Foto Tan Malaka 2" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpGVxhS6gqFnafjfjIjNkAaQFll8bp0GmMsw&s" alt="Dokumen 2" onclick="viewImage(this.src, this.alt)">
+            </div>
+            <h2>Galeri Arsip Sukarno</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/1418px-Presiden_Sukarno.jpg" alt="Foto Sukarno 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1r8VuIG2q79ruYjUVIk_12fxGJvAvBEnsw&s" alt="Dokumen Sukarno 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnj0h6sf8u25XzhHTW9nHhGVwr1aDyXtfLg&s" alt="Foto Sukarno 2" onclick="viewImage(this.src, this.alt)">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2021/08/17/potret-sukarno-bapak-bangsa-yang-disegani-tokoh-tokoh-dunia-5.jpeg?w=700&q=90" alt="Dokumen Sukarno 2" onclick="viewImage(this.src, this.alt)">
+            </div>
+            <h2>Galeri Arsip Mohammad Hatta</h2>
+            <div class="gallery">
+                <img src="https://thumb.viva.co.id/media/frontend/tokoh/2017/08/16/59941b71bae54-mohammad-hatta2_216_287.jpg" alt="Foto Hatta 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://www.seratusinstitute.com/medias2/images/home/news/2018/08/11/hatta.jpeg" alt="Dokumen Hatta 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04T0oj5Tr6Dx1_iAP3PVIt87xk1_3CYgxig&s" alt="Foto Hatta 2" onclick="viewImage(this.src, this.alt)">
+                <img src="https://www.eramuslim.com/framework/media/2019/02/Bung-Hatta.jpg" alt="Dokumen Hatta 2" onclick="viewImage(this.src, this.alt)">
+            </div>
+            <h2>Galeri Arsip D.N. Aidit</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/DNAidit1963.jpg/250px-DNAidit1963.jpg" alt="Foto D.N Aidit 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://asset.kompas.com/crops/Sohv57sX-FDLWCnsFbQfZBa2CEs=/143x0:881x492/1200x800/data/photo/2018/11/23/33206834801.JPG" alt="Dokumen D.N Aidit 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcrIO-R2JA_FgoY9PZJfRE27zDcYsduVK8Q&s" alt="Dokumen D.N Aidit 1" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwS32cET-w30atkzCUM4IzjnZphs6mYYMNsw&s" alt="Dokumen D.N Aidit 1" onclick="viewImage(this.src, this.alt)">
+            </div>
+            <h2>Galeri Pahlawan Amir Sjarifuddin</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Amir_Sjarifoeddin_%28cropped%29.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x0/webp/photo/klikanggaran/2021/05/IMG-20210510-WA0043.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwM172me5pDjA931BoMhGItW9EpmIf0WiYmg&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://indonesiabuzz.com/wp-content/uploads/2024/08/Tokoh-Pergerakan-Nasional-1.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+            </div>
+             <h2>Galeri Pahlawan  Jenderal Soedirman</h2>
+            <div class="gallery">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGt9RXYBR0t1Hw7n2iVzX8F0A8UPfZBq1-gQ&s" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://i.pinimg.com/736x/10/eb/e5/10ebe54a3af44e488c483ab9e5b63216.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc4H8FQmKF1dwXTJsrDCZEmQJxAq8m6V2fAA&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://i0.wp.com/web.suaramuhammadiyah.id/wp-content/uploads/2018/10/Sudirman-dan-Teman.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan  Bung Tomo (Sutomo)</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Bung_Tomo.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38-UVDZEFjX5K66_PwNDO87v1nzLCu5wyvA&s" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCenNHAx9JVu_3BR6yLlUQivm9GX9YHKi0qQ&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://static.wixstatic.com/media/8775b0_0cb2840781f143b2a714476b4efd44fe~mv2.jpg/v1/fill/w_824,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8775b0_0cb2840781f143b2a714476b4efd44fe~mv2.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan Sutan Sjahrir</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Soetan_Sjahrir_1948.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://i.pinimg.com/originals/7f/77/d3/7f77d3f533f08bed5a0413ef19b84ac9.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBkLSXcZN06-h3EmtEyCaEsQcXIyDqkrTuTQ&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/76/2024/09/09/IMG_20240909_161746-538361678.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan  Jenderal Ahmad Yani</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Ahmad_Yani.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://pict.sindonews.net/dyn/850/pena/news/2022/10/25/14/921857/kisah-ahmad-yani-jenderal-tni-pemegang-samurai-legendaris-jepang-ikp.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://cdn.grid.id/crop/0x0:0x0/filters:format(webp):quality(100)/photo/2025/08/09/ahmad-yanijpg-20250809021213.jpg" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsg2VmBmcGQq137YqgBNtFfhX-1motiUl8lQ&s" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan  Letjen Suprapto</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Soeprapto.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://ikpni.or.id/wp/wp-content/uploads/2018/03/Letjen-Soeprapto.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Pt0cTAwjQnfB5Ua565ahpkHjIp4IW4-Mg&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://assets.pikiran-rakyat.com/crop/339x234:897x685/1200x675/webp/photo/2023/09/29/3772991697.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan Letjen S. Parman</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/S_Parman.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp4TBuz9DEjqvD2EgJ8cbfURYUe2jGiE8HpIu14GdqpRyjswbYzUX6Yy02OymH_ZRXMXplBRFLXPS8gblNRdGjN_S9ownCEJDkUxQtWSinfTFSemBEYS_Ko8rUUIu-GlyKmpv2x45_hI8/s16000-rw/1918-1965_s_parman.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_TAtB2LZBWlWL93HsbVwJ4UG8wWGQQYQKQ&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+               
+        </div>
+        <h2>Galeri Pahlawan  Letjen M.T Haryo</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MT_Haryono.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+                <img src="https://ikpni.or.id/wp/wp-content/uploads/2018/03/Letjen-MT-Harjono.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKo4PnnPziNd7O7Fk01vL6KZebG71fWXd5Vg&s" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnXahpQ3aXBPGYtAwSZiPX8LQvx55c5jsoA&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan Mayjen D.I. Pandjaitan</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/D._I._Pandjaitan.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR77AzxM9vVfIuf5olM80rmSQBsEYNmT4unVg&s" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://demokratis.co.id/wp-content/uploads/2022/06/DI-Panjaitan.jpg" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://assets.promediateknologi.id/crop/0x0:627x436/750x500/webp/photo/p3/103/2024/09/18/Mayjen-DI-Panjaitan-1-307916564.jpg" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        <h2>Galeri Pahlawan Mayjen Sutoyo Siswomiharjo</h2>
+            <div class="gallery">
+                <img src="https://img.okezone.com/content/2023/10/02/337/2893046/kisah-tragis-mayjen-sutoyo-gugur-di-tangan-pemberontak-g30s-pki-oqyZ2UJMYB.jpeg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://static.republika.co.id/uploads/images/headline_slide/mayjen-tni-anumerta-sutoyo-siswomiharjo_241001170431-184.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                
+        </div>
+        <h2>Galeri Pahlawan Kapten Pierre Tendean</h2>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Tendean.jpg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://cdn.rri.co.id/berita/Kediri/t/1745560987217-1000803386/0hex1gmuori2ocs.jpeg" alt="Jenderal Soedirman" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIJ9l0ctZvM5ZqcpxrIEyLrkDffftXBelWg&s" alt="Bung Tomo" onclick="viewImage(this.src, this.alt)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_9bFKWpgW7rlYCpurdQPlv6w-oP4goiDCA&s" alt="Jenderal Ahmad Yani" onclick="viewImage(this.src, this.alt)">
+        </div>
+        </div>
+
+         <!--KONTAK-->
+        <div id="kontak" class="section">
+            <h2>Tentang Pengelola Web</h2>
+            <p>Website ini dikelola oleh tim PenaRevolusi, yang berkomitmen untuk melestarikan warisan pahlawan revolusioner Indonesia.</p>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PenaRevolusi.com - Arsip Pahlawan Revolusioner Indonesia</p>
+        
+    </footer>
+</body>
+</html>
