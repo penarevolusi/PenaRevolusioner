@@ -80,12 +80,12 @@ const questions = [
         ]
     },
     {
-        question: "Apa Julukukan dari cut nyak dinah?",
+        question: "Salah satu ciri pertanyaan revolusioner adalah kemampuannya untuk...",
         answers: [
-            { text: "Pangeran", correct: false },
-            { text: "Putri", correct: false },
-            { text: "Ratu", correct: true },
-            { text: "Bidadari", correct: false }
+            { text: "Meruntuhkan asumsi lama dan membuka ruang bagi kemungkinan baru.", correct: true },
+            { text: "Menghasilkan jawaban yang bisa ditemukan di buku teks sekolah.", correct: false },
+            { text: "Memberikan jawaban pasti yang tidak bisa didebat lagi.", correct: false },
+            { text: "Membuat orang berhenti berpikir karena terlalu rumit.", correct: false }
         ]
     },
     {
